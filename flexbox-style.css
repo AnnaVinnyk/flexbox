@@ -1,0 +1,139 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: white;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /*min-width: 450px;*/
+}
+
+/*стили для header*/
+
+header{
+    background-color: lightblue;
+}
+
+.name {
+    background-color: darkcyan;
+}
+
+.border-head {
+    border: 1px solid darkcyan;
+}
+
+/*стили для menu*/
+
+nav {
+    background-color: rgb(142, 235, 222);
+}
+
+.link {
+    background-color: rgb(86, 180, 149);
+}
+
+.border-link {
+    border: 1px solid rgb(86, 180, 149);
+}
+
+/*стили для content*/
+
+.border-part{
+    border: 1px solid rgb(82, 189, 73);
+}
+
+.border-pic{
+    border: 1px solid white;
+}
+
+.part-color {
+    background-color: rgb(82, 189, 73);
+}
+
+.content-color {
+    background-color: rgb(142, 235, 158);
+}
+
+.text {
+    text-align: justify;
+    padding: 10px;
+}
+
+img {
+    margin: 5px;
+    max-width: 100px;
+}
+
+.flexpart {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/*стили для footer*/
+
+footer {
+    background-color: rgb(203, 235, 142);
+}
+
+.foot {
+    background-color: rgb(212, 209, 28);
+}
+
+.border-foot {
+    border: 1px solid rgb(212, 209, 28);
+}
+
+/*стили, которые встречаются во всех или почти во всех семантических элементах*/
+
+.part {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.margin {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.width {
+    /*min-width: 15%;*/
+    background-color: transparent;
+}
+
+.grow {
+    -webkit-flex-grow: 1; 
+    -moz-flex-grow: 1; 
+    -ms-flex-grow: 1; 
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+.shrink {
+    -webkit-flex-shrink: 3; 
+    -moz-flex-shrink: 3; 
+    -ms-flex-shrink: 3; 
+    flex-shrink: 3;
+}
