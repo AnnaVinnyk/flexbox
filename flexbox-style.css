@@ -2,6 +2,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     color: white;
+    text-align: center;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -78,6 +79,10 @@ img {
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+}
+
+.flexcenter {
+    justify-content: center;
 }
 
 /*стили для footer*/
