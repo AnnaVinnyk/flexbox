@@ -99,7 +99,8 @@ footer {
     border: 1px solid rgb(212, 209, 28);
 }
 
-/*стили, которые встречаются во всех или почти во всех семантических элементах*/
+/*стили, которые встречаются во всех или
+почти во всех семантических элементах*/
 
 .part {
     margin-right: 10px;
@@ -115,7 +116,7 @@ footer {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
-    display: flex;
+    display: flexbox;
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
@@ -124,7 +125,6 @@ footer {
 }
 
 .width {
-    /*min-width: 15%;*/
     background-color: transparent;
 }
 
@@ -141,4 +141,59 @@ footer {
     -moz-flex-shrink: 3; 
     -ms-flex-shrink: 3; 
     flex-shrink: 3;
+}
+
+@media (max-width: 470px) {
+    nav.content {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+    nav>div.part {
+        margin-right: 0;
+        margin-bottom: 2px;
+        padding: 0;
+    }
+    article>div.part {
+        margin-right: 0;
+        padding: 10px;   
+    }
+    .text, article>div.part {
+        margin-right: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 365px) {
+    .content {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+    .part {
+        margin-right: 0;
+        margin-bottom: 2px;
+        padding: 0;
+    }
+    .margin {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    img {
+        max-width: 100px;
+    }
+    article {
+        font-size: 15px;
+    }
+    .text, article>div.part {
+        margin-right: 0;
+        padding: 10px;
+    }
 }
